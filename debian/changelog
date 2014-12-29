@@ -1,0 +1,17 @@
+ros-hydro-dynpick-driver (0.0.3-0raring) raring; urgency=high
+
+  * Fix/Typo, this may break downstream packages #7 <https://github.com/tork-a/dynpick_driver/issues/7> from k-okada/fix_typo
+  * Fix/Install missing resource. #6 <https://github.com/tork-a/dynpick_driver/issues/6> from 130s/fix/install_launch
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- Isaac IY Saito <iiysaito@opensource-robotics.tokyo.jp>  Mon, 29 Dec 2014 08:00:00 -0000
+
+ros-hydro-dynpick-driver (0.0.2-0raring) raring; urgency=high
+
+  * Initial commit
+  * Add doc
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- Isaac IY Saito <iiysaito@opensource-robotics.tokyo.jp>  Wed, 24 Dec 2014 08:00:00 -0000
+
+
