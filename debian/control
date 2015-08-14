@@ -1,0 +1,12 @@
+Source: ros-indigo-dynpick-driver
+Section: misc
+Priority: extra
+Maintainer: TORK <dev@opensource-robotics.tokyo.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-roscpp
+Homepage: http://wiki.ros.org/dynpick_driver
+Standards-Version: 3.9.2
+
+Package: ros-indigo-dynpick-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-roscpp
+Description: ROS driver package for Wacohtech dynpick force sensor
