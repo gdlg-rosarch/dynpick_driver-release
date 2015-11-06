@@ -1,3 +1,24 @@
+## dynpick_driver (jade) - 0.0.8-0
+
+The packages in the `dynpick_driver` repository were released into the `jade` distro by running `/usr/bin/bloom-release --rosdistro jade --track jade dynpick_driver` on `Fri, 06 Nov 2015 18:05:11 -0000`
+
+The `dynpick_driver` package was released.
+
+Version of package(s) in repository `dynpick_driver`:
+- upstream repository: https://github.com/tork-a/dynpick_driver.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.0.8-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.4`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.38`
+
+
 ## dynpick_driver (indigo) - 0.0.8-0
 
 The packages in the `dynpick_driver` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --rosdistro indigo --track indigo dynpick_driver` on `Fri, 14 Aug 2015 23:40:49 -0000`
