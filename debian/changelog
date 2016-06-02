@@ -1,0 +1,73 @@
+ros-jade-dynpick-driver (0.0.10-0utopic) utopic; urgency=high
+
+  * [feat] Add test binary for measuring device throughput on Ubuntu (tested against QNX). #25 <https://github.com/tork-a/dynpick_driver/issues/25>
+  * [doc] Add a tested product ID. #26 <https://github.com/tork-a/dynpick_driver/issues/26>
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Thu, 02 Jun 2016 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.9-0utopic) utopic; urgency=high
+
+  * [fix] run.launch not publishing Wrench topic issue.
+  * [feat] Rename run.launch --> driver.launch
+  * [sys] add test
+  * [sys] add travis.yml
+  * [doc] Switched to sphinx; this doxygen setting seems not working, and the doc we want by rosdoc is not about api docs but rst files. (#20 <https://github.com/tork-a/dynpick_driver/issues/20>)
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 23 Mar 2016 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.8-0utopic) utopic; urgency=high
+
+  * [doc] Utilize rosdoc_lite.
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Fri, 14 Aug 2015 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.7-0utopic) utopic; urgency=high
+
+  * [feat] Whether or not running RViz
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 12 Aug 2015 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.6-0utopic) utopic; urgency=high
+
+  * [fix] Missing launch file variables
+  * [doc] Add more doc
+  * Contributors: Ron Tajima, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Tue, 11 Aug 2015 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.5-0utopic) utopic; urgency=high
+
+  * (Feature) Do while to read enough data (fix for #1 <https://github.com/tork-a/dynpick_driver/issues/1>)
+  * (Doc) Add to readme new launch usage.
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 01 Apr 2015 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.4-0utopic) utopic; urgency=high
+
+  * Reusable launch files.
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Mon, 23 Mar 2015 07:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.3-0utopic) utopic; urgency=high
+
+  * Fix/Typo, this may break downstream packages #7 <https://github.com/tork-a/dynpick_driver/issues/7> from k-okada/fix_typo
+  * Fix/Install missing resource. #6 <https://github.com/tork-a/dynpick_driver/issues/6> from 130s/fix/install_launch
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Mon, 29 Dec 2014 08:00:00 -0000
+
+ros-jade-dynpick-driver (0.0.2-0utopic) utopic; urgency=high
+
+  * Initial commit
+  * Add doc
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 24 Dec 2014 08:00:00 -0000
+
+
