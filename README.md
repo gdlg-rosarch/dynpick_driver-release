@@ -1,3 +1,26 @@
+## dynpick_driver (kinetic) - 0.0.11-0
+
+The packages in the `dynpick_driver` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic dynpick_driver` on `Thu, 02 Jun 2016 23:10:00 -0000`
+
+The `dynpick_driver` package was released.
+
+Version of package(s) in repository `dynpick_driver`:
+
+- upstream repository: https://github.com/tork-a/dynpick_driver.git
+- release repository: https://github.com/tork-a/dynpick_driver-release.git
+- rosdistro version: `0.0.10-0`
+- old version: `0.0.10-0`
+- new version: `0.0.11-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.21`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.4.7`
+- vcstools version: `0.1.38`
+
+
 ## dynpick_driver (kinetic) - 0.0.10-0
 
 The packages in the `dynpick_driver` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro kinetic --track kinetic dynpick_driver` on `Thu, 02 Jun 2016 21:15:01 -0000`
