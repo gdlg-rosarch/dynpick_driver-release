@@ -1,3 +1,26 @@
+## dynpick_driver (lunar) - 0.2.0-0
+
+The packages in the `dynpick_driver` repository were released into the `lunar` distro by running `/usr/bin/bloom-release dynpick_driver --track lunar --rosdistro lunar` on `Thu, 21 Sep 2017 23:34:47 -0000`
+
+The `dynpick_driver` package was released.
+
+Version of package(s) in repository `dynpick_driver`:
+
+- upstream repository: https://github.com/tork-a/dynpick_driver.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.0-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.6`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## dynpick_driver (kinetic) - 0.2.0-0
 
 The packages in the `dynpick_driver` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release dynpick_driver --track kinetic --rosdistro kinetic` on `Thu, 21 Sep 2017 23:16:22 -0000`
