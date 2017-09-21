@@ -1,0 +1,133 @@
+ros-lunar-dynpick-driver (0.2.0-0stretch) stretch; urgency=high
+
+  * Fix ROS buildfarm error
+    
+      * revert #27 <https://github.com/tork-a/dynpick_driver/issues/27>  (#40 <https://github.com/tork-a/dynpick_driver/issues/40> )
+      * add header file and use fputs instaed of fprintf to avoid compile error
+        
+        warning: implicit declaration of function
+        
+        warning: format not a string literal and no format arguments
+    
+  * [sample.launch] args improvement (#38 <https://github.com/tork-a/dynpick_driver/issues/38>)
+    
+      * [sample.launch] Choose running RViz or not.
+      * [sample.launch] pass wrench topic name.
+    
+  * Adding more build-in features by sensor (#39 <https://github.com/tork-a/dynpick_driver/issues/39>)
+    
+      * Fix reading problems with A6200 version
+        the reply seems to differ for some reason, however this fix it by cleaning up the socket after sensitivity request and filter request
+      * Set built-in filter at startup
+      * Add automatical adjustment of LSB/N
+        
+          * generalized "readFromSocket" function
+          * flushing socket at beginning (to avoid byte offset)
+          * receiving calibration (LSB/N and LSB/Nm) from sensor and multiplying it to data
+          * tabs vs. spaces cleanup
+        
+    
+  * Contributors: Isaac I.Y. Saito, Kei Okada, Lorenz Halt
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Thu, 21 Sep 2017 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.1.1-0stretch) stretch; urgency=high
+
+  * [fix] Add a missing folder to be installed #37 <https://github.com/tork-a/dynpick_driver/issues/37>
+  * [capability] Add a tested product model. #35 <https://github.com/tork-a/dynpick_driver/issues/35>
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Mon, 19 Dec 2016 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.1.0-0stretch) stretch; urgency=high
+
+  * ADD urdf model #32 <https://github.com/tork-a/dynpick_driver/issues/32>
+    * Changed sample launch to show model instead of static tf-frame
+  * Add tare service #30 <https://github.com/tork-a/dynpick_driver/issues/30>
+    * uses std::srvs::Trigger
+    * ordered dependencies alphabetically
+    * Need to send offset_reset command several times (3 at my tests) to work
+  * Contributors: Lorenz Halt
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 14 Sep 2016 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.11-0stretch) stretch; urgency=high
+
+  * Workaround for ROS buildfarm error. #27 <https://github.com/tork-a/dynpick_driver/issues/27>
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 01 Jun 2016 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.10-0stretch) stretch; urgency=high
+
+  * [feat] Add test binary for measuring device throughput on Ubuntu (tested against QNX). #25 <https://github.com/tork-a/dynpick_driver/issues/25>
+  * [doc] Add a tested product ID. #26 <https://github.com/tork-a/dynpick_driver/issues/26>
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Wed, 01 Jun 2016 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.9-0stretch) stretch; urgency=high
+
+  * [fix] run.launch not publishing Wrench topic issue.
+  * [feat] Rename run.launch --> driver.launch
+  * [sys] add test
+  * [sys] add travis.yml
+  * [doc] Switched to sphinx; this doxygen setting seems not working, and the doc we want by rosdoc is not about api docs but rst files. (#20 <https://github.com/tork-a/dynpick_driver/issues/20>)
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Tue, 22 Mar 2016 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.8-0stretch) stretch; urgency=high
+
+  * [doc] Utilize rosdoc_lite.
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Thu, 13 Aug 2015 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.7-0stretch) stretch; urgency=high
+
+  * [feat] Whether or not running RViz
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Tue, 11 Aug 2015 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.6-0stretch) stretch; urgency=high
+
+  * [fix] Missing launch file variables
+  * [doc] Add more doc
+  * Contributors: Ron Tajima, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Mon, 10 Aug 2015 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.5-0stretch) stretch; urgency=high
+
+  * (Feature) Do while to read enough data (fix for #1 <https://github.com/tork-a/dynpick_driver/issues/1>)
+  * (Doc) Add to readme new launch usage.
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Tue, 31 Mar 2015 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.4-0stretch) stretch; urgency=high
+
+  * Reusable launch files.
+  * Contributors: Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Sun, 22 Mar 2015 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.3-0stretch) stretch; urgency=high
+
+  * Fix/Typo, this may break downstream packages #7 <https://github.com/tork-a/dynpick_driver/issues/7> from k-okada/fix_typo
+  * Fix/Install missing resource. #6 <https://github.com/tork-a/dynpick_driver/issues/6> from 130s/fix/install_launch
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Sun, 28 Dec 2014 15:00:00 -0000
+
+ros-lunar-dynpick-driver (0.0.2-0stretch) stretch; urgency=high
+
+  * Initial commit
+  * Add doc
+  * Contributors: Kei Okada, Isaac I.Y. Saito
+
+ -- TORK <dev@opensource-robotics.tokyo.jp>  Tue, 23 Dec 2014 15:00:00 -0000
+
+

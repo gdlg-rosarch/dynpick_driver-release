@@ -1,0 +1,13 @@
+Source: ros-lunar-dynpick-driver
+Section: misc
+Priority: extra
+Maintainer: TORK <dev@opensource-robotics.tokyo.jp>
+Build-Depends: debhelper (>= 9.0.0), python-catkin-pkg, ros-lunar-catkin, ros-lunar-geometry-msgs, ros-lunar-roscpp, ros-lunar-rostest, ros-lunar-std-srvs
+Homepage: http://wiki.ros.org/dynpick_driver
+Standards-Version: 3.9.2
+
+Package: ros-lunar-dynpick-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-geometry-msgs, ros-lunar-robot-state-publisher, ros-lunar-roscpp, ros-lunar-rviz, ros-lunar-std-srvs, ros-lunar-tf, ros-lunar-xacro
+Description: Driver package for Wacohtech dynpick force sensor.
+ This contains ROS-compatible linux driver, as well as a communication test tool. As of Oct 2016, it's tested with the following models of dynpick: wdf-6m200-3 WEF-6A200 (confirmed here)
