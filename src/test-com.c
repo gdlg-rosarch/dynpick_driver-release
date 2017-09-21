@@ -1,9 +1,4 @@
 // test-com.c
-
-/*
- * Build with `gcc -o`. See https://github.com/start-jsk/rtmros_hironx/blob/6eb507f3ad0ed368d909960dd59ddaac0f77f496/hironx_ros_bridge/robot/dynpick/Makefile#L9
- */
-
 #define 	DEBUGSS	0
 
 #include	<stdio.h>
@@ -13,6 +8,7 @@
 #include	<termios.h>
 #include	<string.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include <math.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -24,6 +20,8 @@
 
 #define true		1
 #define false		0
+
+int SetComAttr(int fdc);
 
 int kbhit(void) {
 
@@ -203,7 +201,7 @@ int main() {
 		gettimeofday(&fscan1, NULL);
 		printf("sscanf, sprintf took %7.3f [msec]\n", DELTA_SEC(fscan0, fscan1) * 1000);
 
-		fprintf(stderr, str);
+		fputs(str, stderr);
 		//fprintf(fd, str);
 		num++;
 
@@ -212,7 +210,7 @@ int main() {
 
 		// Dsiaply Console
 		if (clk >= clkb2 + 1000) {
-			printf(str);
+			puts(str);
 			if (kbhit() && getchar() == '.')
 				break;
 			clkb2 = clk / 1000 * 1000;
